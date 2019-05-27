@@ -129,7 +129,7 @@
 	 				</div>
 	 			</form>
 	 		</div>
-	 		<?php $connect=mysqli_connect('127.0.0.1','root','','Andreykych_pn_09'); 
+	 		<?php $connect=mysqli_connect('127.0.0.1','root','','tweetBD'); 
 	 		$query=mysqli_query($connect,'SELECT * FROM tweet ORDER BY id ASC');
 	 		for ($i=0; $i < $query->num_rows; $i++) { 
 	 			$avatar=$query->fetch_assoc();
